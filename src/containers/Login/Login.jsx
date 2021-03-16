@@ -23,10 +23,10 @@ const Login = (props) => {
         props.dispatch({ type: LOGIN, payload: datosFakeBackend });
 
         //volvemos redireccionando a HOME
-        setTimeout(()=>{
+        // setTimeout(()=>{
 
-            history.push('/');
-        },2000)
+            history.push('/profile');
+        // },2000)
     }
 
     return (

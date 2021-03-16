@@ -1,7 +1,8 @@
-import {LOGIN, LOGOUT} from '../types/userType.js';
+import {LOGIN, LOGOUT, SEARCH} from '../types/userType.js';
 
 const initialState = {
-    user : {}
+    user : {},
+    query : ''
 };
 
 const userReducer = (state = initialState, action) => {
@@ -10,6 +11,18 @@ const userReducer = (state = initialState, action) => {
             return {
                 ...state,
                 user : action.payload
+            }
+        
+        case LOGOUT : 
+            return {
+                ...state,
+                user : action.payload
+            }
+
+        case SEARCH : 
+            return {
+                ...state,
+                query : action.payload
             }
 
         default : 

@@ -29,3 +29,9 @@
 .buttonLogin{
     margin-right: 1.5em;
 }
+
+.nombreUsuario {
+    color: white;
+    font-weight: bold;
+    margin-right: 1.5em;
+}
